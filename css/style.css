@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+}
+
+li{
+    color: white;
+}
+
+.header{
+    color: blacks;
+    background-color: gray;
+    font-family: 'JetBrains Mono';
+    overflow: hidden;
+    padding: 20px 10px;
+}
+
+h1{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    float: left;
+    margin-right: 200px;
+}
+
+.header li {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    list-style-type: none;
+  }
+
+.container{
+      float: right;
+}
+
+.header input[type=text]{
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-top: 20px;
+    margin-right: 16px;
+    font-size: 30px;
+    
+}
+
+.search{
+    margin: 0;
+    padding: 0;
+}
+
+.search button{
+    float:left;
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+
+
