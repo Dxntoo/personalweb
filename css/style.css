@@ -12,6 +12,7 @@ li{
     font-family: 'JetBrains Mono';
     overflow: hidden;
     padding: 20px 10px;
+    position: sticky;
 }
 
 h1{
