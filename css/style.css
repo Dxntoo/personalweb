@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: antiquewhite;
 }
 
 li{
@@ -60,5 +60,15 @@ h1{
     font-size: 35px;
 }
 
+.content {
+    display:flex;
 
+}
+
+.content div{
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid;
+
+}
 
