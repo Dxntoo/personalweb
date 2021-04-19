@@ -168,11 +168,19 @@ li{
 .content .right nav{
     display: flex;
     flex-direction: column;
+    
+}
+
+.content .right nav .listchannel h1{
+    margin: 0px;
+    margin-left: 100px;
 }
 
 .content .right nav .listchannel img{
     width: 70px;
     height: 70px;
+    margin: 0px;
+    padding:0px;
 }
 /*End of content*/
 
