@@ -1,3 +1,6 @@
+html{
+    margin: 0;
+}
 body{
     margin: 0;
     padding: 0;
@@ -7,6 +10,7 @@ body{
     background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
 
 li{
     color: white;
@@ -18,13 +22,19 @@ li{
     background: #232526;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+    
 }
 
 .navbar h1{
     flex: 1;
-    margin: auto;
+    margin: 0;
     padding: 2px;
     padding-left: 40px;
     /* border: 1px black solid; */
@@ -33,10 +43,15 @@ li{
 }
 
 .navbar .search{
-    flex: 2;
+    flex: 1;
     /* border: 1px black solid; */
 }
+.navbar nav{
+    flex: 1;
+    padding-top: 0px;
+    /* border: 1px black solid; */
 
+}
 .navbar .search input{
     margin: 10px;
 }
@@ -68,17 +83,16 @@ li{
   }
 
 
-.navbar nav{
-    flex: 1;
-    padding-top: 15px;
-    /* border: 1px black solid; */
 
+
+.navbar h1 a{
+    text-decoration: none;
+    color: white;
 }
-
 .navbar nav a{
     margin: 20px;   
     margin-left: 20px;
-    padding:10px;
+    padding:20px;
     text-decoration: none;
     color: white;
     font-family: "Helvetica Neue",sans-serif;
@@ -88,18 +102,19 @@ li{
 .navbar nav a:hover{
     margin: 20px;   
     margin-left: 20px;
-    padding: 10px;
+    padding: 20px;
     text-decoration: none;
     color:#1a6fb4;
     background-color:rgb(226, 226, 226);
     font-family: "Helvetica Neue",sans-serif;
-    
+    border-bottom: 5px #1a6fb4 solid;
 }
 /*Content*/
 .content {
     display:flex;
     overflow:auto;
-    margin: 10px;
+    margin: 0px;
+    
 }
 
 .content div{
@@ -113,22 +128,19 @@ li{
 .content .left{
     flex: 1;
     height: auto;
-    position: sticky;
-    align-self: flex-start;
-    position: -webkit-sticky;
+    margin-top: 5%;
 }
 
 .content .right{
     flex: 1;
     height: auto;
-    position: sticky;
-    align-self: flex-start;
-    position: -webkit-sticky;
+    margin-top: 5%;
 }
 
 .content .mid{
     flex: 2;
     height: 1300px;
+    margin-top: 5%;
 }
 
 .content .mid .module{
