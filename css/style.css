@@ -181,10 +181,13 @@ li{
 
 .content .right nav .listchannel:hover{
     background-color: white;
-    width: 83%;
     height: 100px;
 }
-.content .right nav .listchannel h1{
+
+.content .right nav .listchannel:active{
+    
+}
+.content .right nav .listchannel h1,p{
     margin: 0px;
     margin-left: 100px;
 }
@@ -194,6 +197,7 @@ li{
     height: 70px;
     margin: 0px;
     padding:0px;
+    border-radius: 50%;
 }
 /*End of content*/
 
