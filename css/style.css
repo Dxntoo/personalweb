@@ -65,30 +65,40 @@ li{
 
 
 .search input{
-    margin: 10px;
+    margin: 0;
     font-family: "Poppins",sans-serif;
 }
 
 .search input[type='text']{
     width: 60%;
     background: #f1f1f1;
-    font-size: 17px;
-    height: 26px;
+    margin: 0;
+    font-size: 16px;
+    padding: 0px;
+    padding-left: 20px;
+    height: 27px;
     border: none;
+    border-radius: 15px 15px 15px 15px;
+    outline:none;
 }
 
 .search input[type='submit']{
-  width: 100px;
-  padding: 5px;
+
+  width: 50px;
+  padding: 1px;
+  margin: 0;
   background: #2196F3;
   color: white;
+  height: 27px;
   font-size: 17px; 
   cursor: pointer;
   border: none;
+  border-radius: 30px;
+  z-index: 999;
 }
 .search input[type='submit']:hover{
-    width: 100px;
-    padding: 5px;
+    width: 50px;
+    padding: 1px;
     background: #1a6fb4;
     color: white;
     font-size: 17px; 
@@ -152,9 +162,39 @@ li{
     flex: 1;
     height: auto;
     margin-top: 5%;
+
     
 }
 
+.left div{
+    padding: 0;
+    
+}
+
+.left div h1{
+    margin-left: 20px;
+}
+
+.left a{
+    text-decoration:none;
+
+}
+
+.left a:hover, a:focus, a:active, a:visited{
+    text-decoration:none;
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.container div{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 15  px;
+}
 .content .right{
     flex: 1;
     height: auto;
@@ -188,6 +228,7 @@ li{
     color: black;
 }
 
+
 .listchannel{
     background-color: white;
     border-radius: 17px;
@@ -198,7 +239,7 @@ li{
 
 .listchannel:hover{
     background-color: white;
-    height: 100px;
+    color: rgb(38, 161, 199);
 }
 
 
