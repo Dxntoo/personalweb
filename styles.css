@@ -120,6 +120,11 @@ footer{
 }
 
 @media only screen and (max-width:700px){
+
+    nav {
+        display: flex;
+        
+    }
     .container{
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr ;
@@ -127,16 +132,22 @@ footer{
         "footer";
     }
 
-    .container nav ul li{
+    .nav-ul{
         display: none;
     }
 
     .hambtn{
+        width: 30px;
+        height: auto;
         display: grid;
+        
+        
     }
 
-    #nav_ul.li.show{
-        display: flex;
-    }
+    
+    
+
+
+   
     
 }
