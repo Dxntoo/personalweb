@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbarstyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mobile-container">
+        <!--Top Navigation Bar-->
+        <div class="topnav">
+            <!--Logo-->
+            <a href="#home" class="active">Logo</a>
+
+            <!--Nav Links -->
+            <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            </div>
+
+            <!--hamburger button with js onclickhandler-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+      <!--Content-->
+      <div style="padding-left:16px">
+        <h3>Vertical Mobile Navbar</h3>
+        <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+        <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
+      </div>
+
+    </div>
+    <script src="navjs.js"></script>
+</body>
+</html>
