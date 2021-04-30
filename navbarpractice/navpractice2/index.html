@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="nav.css"/>
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <title>Dantoo's Website</title>
 </head>
 <body>
 
     <nav>
-        <div class="navbar__container">
+        <div id="navbar__container">
 
             <div class="navbar__logo">
-                <a href="">Logo</a>
+                <a href="">Dantoo</a>
             </div>
 
         
@@ -31,16 +33,61 @@
                 </ul>
             </div>
             <div class="contact__btn">
-                <a href="">Contact Us</a>
+                <a href="#footer">Contact Me</a>
             </div>
-            
-
-            
-
+        
         </div>
     </nav>
     
 
-    <script src="navjs.js"></script>
+    <div class="body__container">
+        <!--Main-->
+        <main>
+            <div class="main__container">
+                <h1>This is my website.</h1>
+                <p>And it's pretty epic.</p>
+            </div>
+            <div class="pfp">
+                <img src=""/>
+            </div>
+            
+            
+        </main>
+        <!--End of Main-->
+
+        <!--Content 1-->
+        <div id="content1">
+
+        </div>
+
+        <!--Features-->
+        <div id="features">
+
+        </div>
+        <!--End of Features-->
+
+        <!--Content 2-->
+        <div id="content2">
+
+        </div>
+        <!--End of Content 2-->
+
+        <!--Footer-->
+        <footer id="footer">
+
+        </footer>
+        <!--End of Footer-->
+    </div>
+
+    <!-- <script src="navjs.js"></script> -->
+
+    <script>
+
+    window.addEventListener('scroll', function () {
+            let nav = document.querySelector('nav');
+            let windowPosition = window.scrollY > 500;
+            nav.classList.toggle('scrolling-active', windowPosition);
+        })
+    </script>
 </body>
 </html>

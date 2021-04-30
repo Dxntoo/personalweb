@@ -1,15 +1,35 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin:0;
     padding: 0;
 }
 
+nav{
+    position: fixed;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease-in-out;
+}
 
 
-.navbar__container {
+
+#navbar__container {
     display: flex;
     justify-content:space-between;
-    background: black;
+    
 }
+
+.scrolling-active{
+    background-color: rgb(29, 29, 29);
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    
+}
+
+
+
 
 .navbar__logo{
     display: flex;
@@ -21,6 +41,7 @@ body{
 .navbar__logo a{
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
 
@@ -43,7 +64,7 @@ body{
 }
 
 .navbar__links a{
-    margin: 0px 2px;
+    margin: 0px 30px;
     text-decoration: none;
     color: white;
     padding: 20px;
@@ -68,13 +89,74 @@ body{
     color:black;
     text-decoration: none;
     background: white;
-    padding: 10px;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius:40px;
 }
 
 .contact__btn a:hover{
-    background: grey;
+    background: rgb(202, 202, 202);
+    transition: all 0.2s ease;
+}
+/* Body Contents */
+
+.body__container{
+    height: 300vh;
+    display:grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 500px 250px 300px 250px 250px; */
+    grid-template-rows: 1.5fr 0.5fr 1fr 0.5fr 0.5fr ;
+    grid-template-areas: 
+    "main"
+    "content1"
+    "features"
+    "content2"
+    "footer";
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    
 }
 
+
+main{
+    background: url(wallpaper.jpg);
+    background-position: center;
+    grid-area: "main";
+    display:flex;
+    padding: 20px;
+    justify-content:center;
+    align-items: center;
+    gap: 10rem;
+    
+}
+
+.pfp{
+    background-color:white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:5px purple solid;
+}
+#content1{
+    background:rgb(68, 68, 68);
+    grid-area: "content1";
+}
+
+#features{
+    background:rgb(170, 92, 92);
+    grid-area: "features";
+}
+
+#content2{
+    background:rgb(41, 182, 151);
+    grid-area: "content2";
+}
+
+footer{
+    background:rgb(95, 27, 112);
+    grid-area: "footer";
+}
 @media screen and (max-width:600px){
 
     .navbar__items{

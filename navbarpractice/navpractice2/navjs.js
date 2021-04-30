@@ -7,3 +7,12 @@ function displayMenuHB(){
         menulinks.style.display == "block";
     }
 }
+
+
+
+window.addEventListener("scroll",function(){
+let main = document.getElementsByClassName("body__container");
+
+main.classList.toggle("scrolling-active");
+});
+
