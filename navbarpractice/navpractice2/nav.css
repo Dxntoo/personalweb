@@ -3,20 +3,77 @@ body{
     padding: 0;
 }
 
+
+
 .navbar__container {
     display: flex;
-
+    justify-content:space-between;
+    background: black;
 }
+
+.navbar__logo{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: 0 auto;
+}
+
+.navbar__logo a{
+    text-decoration: none;
+    color: white;
+}
+
 
 .hamburger__btn{
     display:none;
 }
 
+#navbar__items{
+    justify-content: center;    
+    margin: 0 auto;
+}
 
 .navbar__links{
     display:flex;
+
+    margin: 0;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
 }
 
+.navbar__links a{
+    margin: 0px 2px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    
+}
+
+.navbar__links a:hover{
+    background: white;
+    color:black;
+    
+}
+
+.contact__btn{
+    display:flex;
+    padding:0px 10px 0px 10px;
+    /* background: white; */
+    justify-content:center;
+    align-items:center; 
+}
+
+.contact__btn a{
+    color:black;
+    text-decoration: none;
+    background: white;
+    padding: 10px;
+}
+
+.contact__btn a:hover{
+    background: grey;
+}
 
 @media screen and (max-width:600px){
 
