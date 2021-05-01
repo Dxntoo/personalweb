@@ -170,6 +170,13 @@ main{
 
 #content1__cards__container{
     display: flex;
+    text-align: center;
+}
+
+#content1__cards__container p{
+    display: flex;
+    text-align: justify;
+    text-justify: inter-word;
     
 }
 
