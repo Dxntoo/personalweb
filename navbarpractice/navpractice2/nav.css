@@ -352,9 +352,9 @@ footer{
 
 @media screen and (max-width:800px){
 
-    #navbar__items{
+    /* #navbar__items{
         display:none;
-    }
+    } */
 
     .navbar__logo{
         margin: 20px;
