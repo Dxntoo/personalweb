@@ -16,10 +16,12 @@ var hambtn = document.getElementsByClassName("hamburger__btn")
 //   x.addListener(myFunction) // Attach listener function on state changes
 
 
-function openMenu() {
-    document.getElementById("dropdown__menu").style.display = "flex";
-}
-
 function closeMenu(){
-    document.getElementById("dropdown__menu").style.display = "none";
+    var x = document.getElementById("dropdown__menu");
+    if(x.style.display == "none"){
+        x.style.display = "flex"; 
+    }else{
+        x.style.display = "none"; 
+    }
+    
 }
