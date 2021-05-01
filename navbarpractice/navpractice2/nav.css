@@ -50,11 +50,16 @@ nav{
 
 .hamburger__btn{
     display:none;
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
 }
 
 #navbar__items{
     justify-content: center;    
     margin: 0 auto;
+    
     
 }
 
@@ -106,6 +111,47 @@ nav{
     background: rgb(202, 202, 202);
     transition: all 0.2s ease;
 }
+
+/* Dropdown menu */
+
+
+#dropdown__menu{
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 100%;
+    background:black;
+
+    
+}
+
+.dropdown__items{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.dropdown__items a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    padding: 25px;
+    justify-content: center;
+}
+
+.dropdown__items a:hover{
+    color: black;
+    background:white;
+}
+
+
+
 /* Body Contents */
 
 .body__container{
@@ -141,13 +187,19 @@ main{
 
 .pfp{
     background-color:white;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border:5px purple solid;
     
 }
 
+.pfp img{
+    width: inherit;
+    height: inherit;
+    object-fit:cover;
+    border-radius:inherit;
+}
 
 #content1{
     background:rgb(228, 228, 228);
@@ -166,6 +218,12 @@ main{
     height: 100px;
     border-radius: 50%;
     border:5px black solid;
+}
+
+#content1__pfp img{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
 }
 
 #content1__container{
@@ -292,9 +350,17 @@ footer{
     margin: 0 10px;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:800px){
 
-    .navbar__items{
+    #navbar__items{
+        display:none;
+    }
+
+    .navbar__logo{
+        margin: 20px;
+    }
+
+    .contact__btn{
         display:none;
     }
 
@@ -302,12 +368,20 @@ footer{
         display:flex;
     }
 
-    .navbar__items.show{
-        display:block;
-    }
+   
 
     #content1__cards__container{
         flex-wrap: wrap;
     }
 
+    .pfp{
+        display:none;
+    }
+
+}
+
+@media screen and (min-width:800px){
+    #dropdown__menu{
+        display: none;
+    }
 }

@@ -1,18 +1,25 @@
+   
 
-function displayMenuHB(){
-    var menulinks = document.getElementById("navbar__items");
-    if(menulinks.style.display == "block"){
-        menulinks.style.display == "none";
-    }else{
-        menulinks.style.display == "block";
-    }
+var menulinks = document.getElementById("navbar__items");
+var hambtn = document.getElementsByClassName("hamburger__btn")
+
+// function myFunction(x) {
+//     if (x.matches) {
+//       menulinks.style.display = "none";
+//     }else{
+//         menulinks.style.display = "block";
+//     }
+//   }
+  
+//   var x = window.matchMedia("(max-width: 800px)");
+//   myFunction(x) // Call listener function at run time
+//   x.addListener(myFunction) // Attach listener function on state changes
+
+
+function openMenu() {
+    document.getElementById("dropdown__menu").style.display = "flex";
 }
 
-
-
-window.addEventListener("scroll",function(){
-let main = document.getElementsByClassName("body__container");
-
-main.classList.toggle("scrolling-active");
-});
-
+function closeMenu(){
+    document.getElementById("dropdown__menu").style.display = "none";
+}

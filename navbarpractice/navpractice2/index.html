@@ -20,24 +20,33 @@
                 margin: 0px 3px;">too</span></a>
             </div>
 
-        
-            <a class="hamburger__btn"
-            href="javascript:void(0);"
-            onclick="displayMenuHB()">Test</a>
-            
-
             <div id="navbar__items">
                 <ul class="navbar__links">
                     <a href=""><li>Home</li></a>
                     <a href=""><li>About</li></a>
                     <a href=""><li>Products</li></a>
-                    
                 </ul>
             </div>
             <div class="contact__btn">
                 <a href="#footer">Contact Me</a>
             </div>
-        
+
+            <a class="hamburger__btn"
+            href="javascript:void(0);"
+            onclick="openMenu()">||||</a>
+
+            <div id="dropdown__menu">
+                <div class="dropdown__items">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Products</a>
+                    <a href="">Contact Me</a>
+                </div>
+                
+                    
+                
+            </div>
+
         </div>
     </nav>
     
@@ -50,7 +59,7 @@
                 <p>And it's pretty epic.</p>
             </div>
             <div class="pfp">
-                <img src=""/>
+                <img src="profilepicture.png"/>
             </div>
             
             
@@ -61,7 +70,7 @@
         <div id="content1">
             <div id="content1__container">
                 <div id="content1__pfp">
-                    <img src=""/>
+                    <img src="profilepicture.png"/>
                 </div>
                 
                 <div id="content1__cards__container">
@@ -174,5 +183,7 @@
             nav.classList.toggle('scrolling-active', windowPosition);
         })
     </script>
+
+    <script src="navjs.js"></script>
 </body>
 </html>
