@@ -216,28 +216,81 @@ footer{
     grid-template-areas: 
     "more__info social__info contact__info"
     "copyright copyright copyright";
+    color:white;
+    text-align:left;
+    text-align:justify;
+    font-size: 12px;
     
 }
-#more__info{
-    background: black;
-    grid-area: more__info;
+
+#footer__container p{
+    color:rgb(182, 182, 182);
 }
+#more__info{
+    background: rgb(36, 36, 36);
+    grid-area: more__info;
+    padding: 20px;
+}
+
+#more__info p{
+    max-width: 60%;
+}
+
 
 #social__info{
-    background: grey;
+    background: rgb(36, 36, 36);
     grid-area: social__info;
+    padding: 20px 40px;
+    
 }
 
+
+
 #contact__info{
-    background: green;
+    background: rgb(36, 36, 36);
     grid-area: contact__info;
+    padding: 20px;
 }
 
 #copyright{
-    background: purple;
+    background: rgb(22, 22, 22);
     grid-area: copyright;
+    padding: 10px 20px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
 }
 
+
+.social__item{
+    display: flex;
+    margin: 20px 0;
+    width: 200px;
+    height: 30px;
+    
+}
+
+.social__item a{
+    color: white;
+    text-decoration: none;
+    padding:5px 0;
+    width: 200px;
+   
+}
+
+.social__item a:hover{
+    background: white;
+    color: black;
+}
+
+
+
+.social__logo{
+    background:white;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
 
 @media screen and (max-width:600px){
 
