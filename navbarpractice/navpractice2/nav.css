@@ -170,6 +170,7 @@ main{
 
 #content1__cards__container{
     display: flex;
+    
 }
 
 .content1__cards{
@@ -201,6 +202,10 @@ footer{
 
     .navbar__items.show{
         display:block;
+    }
+
+    #content1__cards__container{
+        flex-wrap: wrap;
     }
 
 }
