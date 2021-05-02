@@ -307,6 +307,7 @@ footer{
     flex-direction:column;
     justify-content: center;
     align-items:center;
+    
 }
 
 
@@ -328,7 +329,7 @@ footer{
 
 .social__item{
     display: flex;
-    margin: 20px 0;
+    margin: 10px 0;
     width: 200px;
     height: 30px;
     
@@ -350,11 +351,15 @@ footer{
 
 
 .social__logo{
-    background:white;
+    
     width: 30px;
     height: 30px;
     margin: 0 10px;
+    font-size:20px;
+
 }
+
+
 
 @media screen and (max-width:800px){
 
