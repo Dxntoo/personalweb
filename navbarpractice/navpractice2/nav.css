@@ -302,6 +302,12 @@ footer{
     
 }
 
+#social__container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
 
 
 #contact__info{
@@ -378,6 +384,21 @@ footer{
         display:none;
     }
 
+    #footer__container{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    
+
+    #more__info p{
+        margin: 0;
+        max-width: 100%;
+    }
+
+    
 }
 
 @media screen and (min-width:800px){
